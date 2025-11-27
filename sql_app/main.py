@@ -19,7 +19,10 @@ app = FastAPI()
 
 # This is the CORS middleware configuration
 origins = [
-    "http://localhost:3000",  # The origin of your React frontend
+    "http://localhost:3000",                # For local development
+    "http://34.54.156.38",                  # Your GCP Load Balancer IP (no trailing slash)
+    "http://storage.googleapis.com",        # The origin for GCS (no path or filename)
+    "https://storage.googleapis.com",       # Adding https as well, just in case
 ]
 
 app.add_middleware(

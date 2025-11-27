@@ -1,0 +1,39 @@
+# --- Python / Virtual Environment ---
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Local Database ---
+# IMPORTANT: Never commit your development database
+sql_app.db
+
+# --- AWS / EB CLI ---
+# The .elasticbeanstalk folder contains environment-specific info
+.elasticbeanstalk/
+
+# --- GCP / gcloud CLI ---
+.gcloud/
+
+# --- Frontend / Node.js ---
+# The node_modules folder is huge and should always be ignored
+habit-tracker-frontend/node_modules/
+# The production build folder
+habit-tracker-frontend/build/
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- IDE / Editor Files ---
+.vscode/
+.idea/
+
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
+
+# --- SECRET CREDENTIALS (CRITICAL) ---
+# Add the exact name of your AWS credentials file
+Sauleh_cli_accessKeys.csv

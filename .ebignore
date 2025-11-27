@@ -1,0 +1,30 @@
+# Virtual environment
+
+venv/
+
+# Python cache
+
+**pycache**/
+\*.pyc
+
+# Local database file (should not be deployed)
+
+sql_app.db
+
+# Frontend code (the backend doesn't need it)
+
+habit-tracker-frontend/
+
+# Git folder
+
+.git/
+
+# Ignore the ignore files themselves
+
+.gitignore
+.dockerignore
+.ebignore
+
+# Local AWS credentials file (VERY IMPORTANT)
+
+Sauleh_cli_accessKeys.csv... # Or whatever the full name is

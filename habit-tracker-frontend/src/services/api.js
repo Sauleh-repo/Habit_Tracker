@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-    baseURL: 'http://127.0.0.1:8000',
+    baseURL:'http://habit-tracker-prod.eba-8xdmc2ph.ap-south-1.elasticbeanstalk.com',
 });
 
 apiClient.interceptors.request.use(
