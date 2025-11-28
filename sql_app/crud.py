@@ -3,7 +3,7 @@
 from sqlalchemy.orm import Session
 from . import models, schemas, security
 
-# --- User CRUD --- (No changes in this section)
+# --- User CRUD --- 
 def get_user(db: Session, user_id: int):
     return db.query(models.User).filter(models.User.id == user_id).first()
 
@@ -37,7 +37,6 @@ def delete_habit(db: Session, habit_id: int):
         db.commit()
     return db_habit
 
-# --- ADD THIS NEW FUNCTION ---
 def update_habit(db: Session, habit_id: int, habit_update: schemas.HabitUpdate):
     db_habit = db.query(models.Habit).filter(models.Habit.id == habit_id).first()
     if db_habit:
